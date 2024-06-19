@@ -7,7 +7,6 @@ body {
     width: 1160px;
 }
 
-/* Header CSS start */
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -29,24 +28,15 @@ body {
     margin-top: 10px;
 }
 
-.photo-profile {
-    width: 150px;
-    height: 150px;
-    margin-top: 30px;
-}
-
-.photo-profile__img {
+header img{
     width: 100%;
     height: 100%;
+    object-fit: cover; 
     border-radius: 50%;
-    box-shadow: 0 0 15px #dbc2a4;
-}
-
-.photo-profile__img:hover {
+    box-shadow: 0 0 40px black;
     cursor: zoom-in;
 }
 
-/* Address CSS start */
 .address {
     display: flex;
     flex-direction: row;
@@ -94,19 +84,26 @@ body {
     border-right: 2px solid #2c1d27;
 }
 
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: 2px solid #2c1d27;
+}
+
 .main__left {
     flex: 1 1 0;
     background-color: #782221;
 }
 
-.main__left > section  {
+.main__left > ul  {
     font-family: "Raleway-Regular";
     color: white;
     margin-right: 40px;
     margin-bottom: 30px;
 }
 
-.main__left > section > h2 {
+.main__left > ul > h2 {
     font-family: "Lato";
     font-weight: bold;
     font-size: 1.2em;
@@ -115,14 +112,14 @@ body {
     padding: 5px 15px;
 }
 
-.main__left > section > ul > li {
+.main__left  > ul > li {
     margin-left: -10px;
 }
 
-.main__left > section > p {
+.main__left > ul > p {
     text-align: justify;
     text-indent: 20px;
-    margin-left: 15px;
+    margin-left: -10px;
 }
 
 .main__right {
@@ -130,14 +127,14 @@ body {
     background-color: white;
 }
 
-.main__right > article {
+.main__right > ul > h2 {
     font-family: "Raleway-Regular";
     color: black;
     margin-left: 30px;
     margin-right: 30px;
 }
 
-.main__right > article > h2 {
+.main__right > ul > h2 {
     font-family: "Lato";
     font-weight: bold;
     font-size: 1.2em;
@@ -145,20 +142,19 @@ body {
     padding: 5px 15px;
 }
 
-.main__right > article > section {
-    margin-left: 15px;
+.main__right > ul > h2 {
+    margin-left: -10px;
 }
 
-.main__right article:hover > h2 {
+.main__right:hover > ul > h2 {
     border-left: 5px solid #782221;
 }
 
-.main__right > article > section > h3 {
+.main__right  > h3 {
     font-family: "Lato";
     font-size: 1em;
 }
 
-/* Footer part */
 .footer {
     display: flex;
     flex-direction: column;
